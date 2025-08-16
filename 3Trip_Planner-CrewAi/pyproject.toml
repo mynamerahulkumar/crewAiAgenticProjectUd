@@ -1,0 +1,24 @@
+[project]
+name = "3trip-planner-crewai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.159.0",
+    "fastapi>=0.109.0",
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.27",
+    "langchain-core>=0.3.74",
+    "langchain-groq>=0.3.7",
+    "langchain-openai>=0.0.5",
+    "openai>=1.6.1",
+    "pydantic>=2.10",
+    "pyowm>=3.3.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+    "streamlit>=1.29.0",
+    "tools>=0.1.9",
+    "unstructured>=0.11.0",
+    "uvicorn>=0.27.0",
+]

@@ -18,12 +18,14 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs',
+        'topic': 'Agentic AI in Healthcare use cases',
         'current_year': str(datetime.now().year)
     }
     
     try:
-        ResearchCrew().crew().kickoff(inputs=inputs)
+       result= ResearchCrew().crew().kickoff(inputs=inputs)
+       with open("health_agent_result.md","w") as f:
+            f.write(str(result)) 
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
 
@@ -33,7 +35,7 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs = {
-        "topic": "AI LLMs",
+        "topic": "Agentic AI in Healthcare use cases",
         'current_year': str(datetime.now().year)
     }
     try:
@@ -57,12 +59,12 @@ def test():
     Test the crew execution and returns the results.
     """
     inputs = {
-        "topic": "AI LLMs",
+        "topic": "Agentic AI in Healthcare use cases",
         "current_year": str(datetime.now().year)
     }
     
     try:
-        ResearchCrew().crew().test(n_iterations=int(sys.argv[1]), eval_llm=sys.argv[2], inputs=inputs)
-
+      result=ResearchCrew().crew().test(n_iterations=int(sys.argv[1]), eval_llm=sys.argv[2], inputs=inputs)
+      
     except Exception as e:
         raise Exception(f"An error occurred while testing the crew: {e}")
