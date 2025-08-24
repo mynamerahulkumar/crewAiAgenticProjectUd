@@ -1,0 +1,8 @@
+crewai-tools
+langchain-google-genai
+pyvis
+langchain-tools
+google-auth-oauthlib
+google-api-python-client
+asyncio
+crewai[tools]
