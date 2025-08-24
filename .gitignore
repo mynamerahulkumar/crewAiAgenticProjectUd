@@ -290,7 +290,7 @@ checkpoint/
 *.exe
 # Ignore all .mp4 files
 *.svg
-*.txt
+# *.txt
 .env/
 # Jupyter Notebook checkpoints
 # Logs and database files
@@ -436,7 +436,7 @@ Thumbs.db
 # Data Files
 **/*.csv
 **/*.tsv
-**/*.txt
+# **/*.txt
 **/*.xls
 **/*.xlsx
 **/*.json
